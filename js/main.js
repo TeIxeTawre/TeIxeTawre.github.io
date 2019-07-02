@@ -1,3 +1,5 @@
+let curItem = 0;
+
 $( document ).ready( function () {
 	
 	$('.menu-btn').on('click', function (e) {
@@ -39,47 +41,49 @@ $( document ).ready( function () {
 		autoplayHoverPause: true,
 		autoplaySpeed: 1000,
 		mouseDrag: false,
-		onDragged: callback
 	});
 
-	function callback(e) {
+	$('#simple-carousel').on('changed.owl.carousel', function (event) {
+		curItem = event.item.index;
 
-		$('#simple-carousel').on('changed.owl.carousel', function (e) {
-			let curItem = 0;
-			curItem = e.item.index;
-
-			if ( curItem == 0) {
-				$('.sm-one').addClass('active-trg');
-				$('.sm-two').removeClass('active-trg');
-				$('.sm-thre').removeClass('active-trg');
-			}
-			if ( curItem == 1) {
-				$('.sm-two').addClass('active-trg');
-				$('.sm-one').removeClass('active-trg');
-				$('.sm-thre').removeClass('active-trg');
-			}
-			if ( curItem == 2) {
-				$('.sm-three').addClass('active-trg');
-				$('.sm-two').removeClass('active-trg');
-				$('.sm-one').removeClass('active-trg');
-			}
-		});
-	}
+		ifer();
+	});
 
 
 	$('.sm-one').on('click', function (e) {
 		e.preventDefault();
 		$('#simple-carousel').trigger("to.owl.carousel", [0, 500]);
+		ifer();
 	});
 
 	$('.sm-two').on('click', function (e) {
 		e.preventDefault();
 		$('#simple-carousel').trigger('to.owl.carousel', [1, 500]);		
+		ifer();
 	});
 
 	$('.sm-three').on('click', function (e) {
 		e.preventDefault();
 		$('#simple-carousel').trigger('to.owl.carousel', [2, 500]);
+		ifer();
 	});
 
 });
+
+function ifer() {
+	if ( curItem == 2) {
+		$('.sm-one').addClass('active-trg');
+		$('.sm-two').removeClass('active-trg');
+		$('.sm-three').removeClass('active-trg');
+	}
+	if ( curItem == 3) {
+		$('.sm-two').addClass('active-trg');
+		$('.sm-one').removeClass('active-trg');
+		$('.sm-thre').removeClass('active-trg');
+	}
+	if ( curItem == 4) {
+		$('.sm-three').addClass('active-trg');
+		$('.sm-two').removeClass('active-trg');
+		$('.sm-one').removeClass('active-trg');
+	}
+}
