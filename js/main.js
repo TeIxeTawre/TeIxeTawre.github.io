@@ -79,7 +79,7 @@ function ifer() {
 	if ( curItem == 3) {
 		$('.sm-two').addClass('active-trg');
 		$('.sm-one').removeClass('active-trg');
-		$('.sm-thre').removeClass('active-trg');
+		$('.sm-three').removeClass('active-trg');
 	}
 	if ( curItem == 4) {
 		$('.sm-three').addClass('active-trg');
