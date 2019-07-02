@@ -6,8 +6,8 @@
 	<title>icrowdme</title>
 	<!-- fonts -->
 	<link rel="stylesheet" href="css/all.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap&subset=cyrillic" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap&subset=cyrillic" rel="stylesheet"> -->
 
 	<!-- libraries -->
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -24,6 +24,8 @@
 	<link rel="stylesheet" href="css/mobile-menu.css">
 	<link rel="stylesheet" href="css/slider.css">
 	<link rel="stylesheet" href="css/section.css">
+	<link rel="stylesheet" href="css/section-media.css">
+
 
 </head>
 <body>
@@ -32,18 +34,18 @@
 		<nav>
 			<div class="container">
 				<div class="row">
-					<div class="col-4 col-md-3">
+					<div class="col-4 col-md-3 col-lg-2 col-xl-3">
 						<a href="index.html" class="logo-block">
 							<img src="img/logo.png" alt="logotype" class="logo">
 						</a>
 					</div>
-					<div class="col-3 col-sm-2 col-md-1 col-lg-7 order-last order-lg-0 d-flex align-items-center">
+					<div class="col-3 col-sm-2 col-md-1 col-lg-8 col-xl-7 order-last order-lg-0 d-flex align-items-center">
 						<a href="#" class="menu-btn b-block d-lg-none align-items-center justify-content-center">
 							<span></span>
 						</a>
 						<ul class="menu  d-block d-lg-flex">
 							<div class="bg-menu"></div>
-							<li><a href="#">
+							<li class="active-page"><a href="#">
 								home
 							</a></li>
 							<li><a href="#">
@@ -72,7 +74,7 @@
 		</nav>
 
 		<main>
-			<div class="owl-carousel">
+			<div id ="header-carousel" class="owl-carousel">
 				<div style="background: url(img/header-bg1.jpg) no-repeat center center / cover;">
 					<div class="effect"></div>
 				</div>
@@ -149,6 +151,82 @@
 					<div class="col-12">
 						<p class="text-title">
 							Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="simple">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="side-bar">
+						<a href="#" class="trigger sm-one">
+							<div class="circle">
+								<span>
+									1
+								</span>
+							</div>
+							<p class="description d-none d-lg-block">
+								Simple
+							</p>
+						</a>
+						<a href="#" class="trigger sm-two">
+							<div class="circle">
+								<span>
+									2
+								</span>
+							</div>
+							<p class="description d-none d-lg-block">
+								Transparent
+							</p>
+						</a>
+						<a href="#" class="trigger sm-three">
+							<div class="circle">
+								<span>
+									3
+								</span>
+							</div>
+							<p class="description d-none d-lg-block">
+								Collaborative
+							</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="simple-carousel" class="owl-carousel">
+				<div class="window">
+					<img src="img/glasses.png" alt="face slider foto" class="face">
+					<div class="text">
+						<h3>
+							Browse projects, like booking a hotel online !
+						</h3>
+						<p class="description">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+				<div class="window">
+					<img src="img/glasses.png" alt="face slider foto" class="face">
+					<div class="text">
+						<h3>
+							Browse projects, like booking a hotel online !
+						</h3>
+						<p class="description">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+				<div class="window">
+					<img src="img/glasses.png" alt="face slider foto" class="face">
+					<div class="text">
+						<h3>
+							Browse projects, like booking a hotel online !
+						</h3>
+						<p class="description">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 						</p>
 					</div>
 				</div>
