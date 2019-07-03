@@ -45,6 +45,7 @@ $( document ).ready( function () {
 
 	$('#simple-carousel').on('changed.owl.carousel', function (event) {
 		curItem = event.item.index;
+		console.log(curItem);
 		ifer();
 	});
 
@@ -65,8 +66,7 @@ $( document ).ready( function () {
 		e.preventDefault();
 		$('#simple-carousel').trigger('to.owl.carousel', [2, 500]);
 		ifer();
-		$('.sm-one').removeClass('active-trg');
-		$('.sm-three').addClass('active-trg');
+		
 	});
 
 	/*$('.act-find__first').hover(function() {
@@ -95,6 +95,11 @@ function ifer() {
 		$('.sm-three').addClass('active-trg');
 		$('.sm-two').removeClass('active-trg');
 		$('.sm-one').removeClass('active-trg');
+	}
+	if ( curItem == 5) {
+		$('.sm-one').addClass('active-trg');
+		$('.sm-two').removeClass('active-trg');
+		$('.sm-three').removeClass('active-trg');
 	}
 }
 
