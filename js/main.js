@@ -81,6 +81,11 @@ $( document ).ready( function () {
 });
 
 function ifer() {
+	if ( curItem == 1) {
+		$('.sm-three').addClass('active-trg');
+		$('.sm-two').removeClass('active-trg');
+		$('.sm-one').removeClass('active-trg');
+	}
 	if ( curItem == 2) {
 		$('.sm-one').addClass('active-trg');
 		$('.sm-two').removeClass('active-trg');
