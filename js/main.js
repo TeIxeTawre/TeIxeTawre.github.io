@@ -45,7 +45,6 @@ $( document ).ready( function () {
 
 	$('#simple-carousel').on('changed.owl.carousel', function (event) {
 		curItem = event.item.index;
-		console.log(curItem);
 		ifer();
 	});
 
@@ -69,15 +68,33 @@ $( document ).ready( function () {
 		
 	});
 
-	/*$('.act-find__first').hover(function() {
-    	$('.properties-effect').css('background-color', '#e2f8ff');
-    	$('.buyers-effect').css('background-color', '#f5f9eb');
+	let numberLineOne = Number($('.fun-one span').text());
+	let numberLineTwo = Number($('.fun-two span').text());
+	let numberLineThree = Number($('.fun-three span').text());
+
+	$('.line-one').css({
+	  '-webkit-transform' : 'translateX(' + numberLineOne + '%)',
+	  '-moz-transform'    : 'translateX(' + numberLineOne + '%)',
+	  '-ms-transform'     : 'translateX(' + numberLineOne + '%)',
+	  '-o-transform'      : 'translateX(' + numberLineOne + '%)',
+	  'transform'         : 'translateX(' + numberLineOne + '%)'
 	});
 
-	$('.act-find__second').hover(function() {
-    	$('.buyers-effect').css('background-color', '#e2f8ff');
-    	$('.properties-effect').css('background-color', '#f5f9eb');
-	});*/
+	$('.line-two').css({
+	  '-webkit-transform' : 'translateX(' + numberLineTwo + '%)',
+	  '-moz-transform'    : 'translateX(' + numberLineTwo + '%)',
+	  '-ms-transform'     : 'translateX(' + numberLineTwo + '%)',
+	  '-o-transform'      : 'translateX(' + numberLineTwo + '%)',
+	  'transform'         : 'translateX(' + numberLineTwo + '%)'
+	});
+
+	$('.line-three').css({
+	  '-webkit-transform' : 'translateX(' + numberLineThree + '%)',
+	  '-moz-transform'    : 'translateX(' + numberLineThree + '%)',
+	  '-ms-transform'     : 'translateX(' + numberLineThree + '%)',
+	  '-o-transform'      : 'translateX(' + numberLineThree + '%)',
+	  'transform'         : 'translateX(' + numberLineThree + '%)'
+	});
 });
 
 function ifer() {
